@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2017-12-10 14:10:47.280 UTC</timestamp>
+  <original>
+    <name>Prod Build Sanity/org.iomedia.galen:AMGRTests</name>
+    <number>14</number>
+  </original>
+  <md5sum>3db5bc8acb5a6f6346b9676af8c987eb</md5sum>
+  <fileName>org.iomedia.galen:AMGRTests:pom.xml</fileName>
+  <usages>
+    <entry>
+      <string>Prod Build Sanity</string>
+      <ranges>13-18,23-24,29-32,36-57,59-71,73-81,83-87,89-91,93</ranges>
+    </entry>
+    <entry>
+      <string>Prod Build Sanity/org.iomedia.galen:AMGRTests</string>
+      <ranges>13-18,23-24,29-32,36-57,59-81,83-93</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

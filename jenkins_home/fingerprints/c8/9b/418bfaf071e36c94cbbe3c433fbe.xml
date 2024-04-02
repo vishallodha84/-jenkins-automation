@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-05-30 10:41:55.336 UTC</timestamp>
+  <md5sum>c89b418bfaf071e36c94cbbe3c433fbe</md5sum>
+  <fileName>org.iomedia.framework:IOMediaFramework-18.9.jar</fileName>
+  <usages>
+    <entry>
+      <string>Prod Build Sanity</string>
+      <ranges>144-145</ranges>
+    </entry>
+    <entry>
+      <string>Prod Build Sanity/org.iomedia.galen:AMGRTests</string>
+      <ranges>144-145</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

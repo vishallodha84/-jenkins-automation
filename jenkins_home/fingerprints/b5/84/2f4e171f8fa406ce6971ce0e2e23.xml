@@ -1,0 +1,33 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-05-10 09:29:03.361 UTC</timestamp>
+  <md5sum>b5842f4e171f8fa406ce6971ce0e2e23</md5sum>
+  <fileName>com.amazonaws:aws-java-sdk-kinesis-1.11.106.jar</fileName>
+  <usages>
+    <entry>
+      <string>TakeScreenshot/org.iomedia.galen:AMGRTests</string>
+      <ranges>43</ranges>
+    </entry>
+    <entry>
+      <string>Prod Build Sanity</string>
+      <ranges>142-145</ranges>
+    </entry>
+    <entry>
+      <string>AWS Linux/org.iomedia.galen:AMGRTests</string>
+      <ranges>50,52-55</ranges>
+    </entry>
+    <entry>
+      <string>AWS Linux</string>
+      <ranges>50,52-55</ranges>
+    </entry>
+    <entry>
+      <string>TakeScreenshot</string>
+      <ranges>43</ranges>
+    </entry>
+    <entry>
+      <string>Prod Build Sanity/org.iomedia.galen:AMGRTests</string>
+      <ranges>142-145</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

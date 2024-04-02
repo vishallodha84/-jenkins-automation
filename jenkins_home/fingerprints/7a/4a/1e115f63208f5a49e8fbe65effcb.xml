@@ -1,0 +1,33 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-05-10 09:29:03.318 UTC</timestamp>
+  <md5sum>7a4a1e115f63208f5a49e8fbe65effcb</md5sum>
+  <fileName>com.amazonaws:aws-java-sdk-polly-1.11.106.jar</fileName>
+  <usages>
+    <entry>
+      <string>TakeScreenshot/org.iomedia.galen:AMGRTests</string>
+      <ranges>43</ranges>
+    </entry>
+    <entry>
+      <string>Prod Build Sanity</string>
+      <ranges>142-145</ranges>
+    </entry>
+    <entry>
+      <string>AWS Linux/org.iomedia.galen:AMGRTests</string>
+      <ranges>50,52-55</ranges>
+    </entry>
+    <entry>
+      <string>AWS Linux</string>
+      <ranges>50,52-55</ranges>
+    </entry>
+    <entry>
+      <string>TakeScreenshot</string>
+      <ranges>43</ranges>
+    </entry>
+    <entry>
+      <string>Prod Build Sanity/org.iomedia.galen:AMGRTests</string>
+      <ranges>142-145</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

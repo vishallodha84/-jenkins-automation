@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-03-07 08:11:57.510 UTC</timestamp>
+  <original>
+    <name>Provisioning Portal/org.iomedia.galen:PP</name>
+    <number>13</number>
+  </original>
+  <md5sum>3a42ecc4e067d44ad10eb08ee9821b1d</md5sum>
+  <fileName>org.iomedia.galen:PP:pom.xml</fileName>
+  <usages>
+    <entry>
+      <string>Provisioning Portal</string>
+      <ranges>13-21</ranges>
+    </entry>
+    <entry>
+      <string>Provisioning Portal/org.iomedia.galen:PP</string>
+      <ranges>13-21</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

@@ -1,0 +1,33 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-05-10 09:29:03.115 UTC</timestamp>
+  <md5sum>2ea1f5a7ff594857dd3c2452a8137f82</md5sum>
+  <fileName>com.amazonaws:aws-java-sdk-logs-1.11.106.jar</fileName>
+  <usages>
+    <entry>
+      <string>TakeScreenshot/org.iomedia.galen:AMGRTests</string>
+      <ranges>43</ranges>
+    </entry>
+    <entry>
+      <string>Prod Build Sanity</string>
+      <ranges>142-145</ranges>
+    </entry>
+    <entry>
+      <string>AWS Linux/org.iomedia.galen:AMGRTests</string>
+      <ranges>50,52-55</ranges>
+    </entry>
+    <entry>
+      <string>AWS Linux</string>
+      <ranges>50,52-55</ranges>
+    </entry>
+    <entry>
+      <string>TakeScreenshot</string>
+      <ranges>43</ranges>
+    </entry>
+    <entry>
+      <string>Prod Build Sanity/org.iomedia.galen:AMGRTests</string>
+      <ranges>142-145</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

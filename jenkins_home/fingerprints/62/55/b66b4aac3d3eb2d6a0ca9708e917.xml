@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-23 17:46:59.19 UTC</timestamp>
+  <original>
+    <name>Provisioning Portal/org.iomedia.galen:PP</name>
+    <number>23</number>
+  </original>
+  <md5sum>6255b66b4aac3d3eb2d6a0ca9708e917</md5sum>
+  <fileName>org.iomedia.galen:PP:pom.xml</fileName>
+  <usages>
+    <entry>
+      <string>Provisioning Portal</string>
+      <ranges>23-25</ranges>
+    </entry>
+    <entry>
+      <string>Provisioning Portal/org.iomedia.galen:PP</string>
+      <ranges>23-25</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

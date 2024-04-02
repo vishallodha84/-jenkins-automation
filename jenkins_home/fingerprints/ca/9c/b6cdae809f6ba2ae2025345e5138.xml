@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-19 09:24:22.846 UTC</timestamp>
+  <md5sum>ca9cb6cdae809f6ba2ae2025345e5138</md5sum>
+  <fileName>org.iomedia.framework:IOMediaFramework-18.5.jar</fileName>
+  <usages>
+    <entry>
+      <string>AWS Linux</string>
+      <ranges>43</ranges>
+    </entry>
+    <entry>
+      <string>AWS Linux/org.iomedia.galen:AMGRTests</string>
+      <ranges>43</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

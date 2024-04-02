@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2017-12-18 08:47:58.13 UTC</timestamp>
+  <original>
+    <name>TakeScreenshot/org.iomedia.galen:AMGRTests</name>
+    <number>7</number>
+  </original>
+  <md5sum>f9b16d1e8571795312fe43e3590642dc</md5sum>
+  <fileName>org.iomedia.galen:AMGRTests:pom.xml</fileName>
+  <usages>
+    <entry>
+      <string>TakeScreenshot/org.iomedia.galen:AMGRTests</string>
+      <ranges>7-41</ranges>
+    </entry>
+    <entry>
+      <string>Prod Build Sanity</string>
+      <ranges>103</ranges>
+    </entry>
+    <entry>
+      <string>TakeScreenshot</string>
+      <ranges>7-41</ranges>
+    </entry>
+    <entry>
+      <string>Prod Build Sanity/org.iomedia.galen:AMGRTests</string>
+      <ranges>103</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

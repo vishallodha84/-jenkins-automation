@@ -1,0 +1,37 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-05-10 09:29:02.555 UTC</timestamp>
+  <original>
+    <name>Prod Build Sanity/org.iomedia.galen:AMGRTests</name>
+    <number>142</number>
+  </original>
+  <md5sum>7c0188e76f1b5e28236d0bc51129f3e7</md5sum>
+  <fileName>org.iomedia.galen:AMGRTests:pom.xml</fileName>
+  <usages>
+    <entry>
+      <string>TakeScreenshot/org.iomedia.galen:AMGRTests</string>
+      <ranges>43</ranges>
+    </entry>
+    <entry>
+      <string>Prod Build Sanity</string>
+      <ranges>142-143</ranges>
+    </entry>
+    <entry>
+      <string>AWS Linux/org.iomedia.galen:AMGRTests</string>
+      <ranges>50,52-55</ranges>
+    </entry>
+    <entry>
+      <string>AWS Linux</string>
+      <ranges>50,52-55</ranges>
+    </entry>
+    <entry>
+      <string>TakeScreenshot</string>
+      <ranges>43</ranges>
+    </entry>
+    <entry>
+      <string>Prod Build Sanity/org.iomedia.galen:AMGRTests</string>
+      <ranges>142-143</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

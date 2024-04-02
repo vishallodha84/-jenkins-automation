@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-03-05 12:42:35.366 UTC</timestamp>
+  <original>
+    <name>Prod Build Sanity/org.iomedia.galen:AMGRTests</name>
+    <number>114</number>
+  </original>
+  <md5sum>b689c427b9b2b48365589c76c744b387</md5sum>
+  <fileName>org.iomedia.galen:AMGRTests:pom.xml</fileName>
+  <usages>
+    <entry>
+      <string>Prod Build Sanity</string>
+      <ranges>114-115</ranges>
+    </entry>
+    <entry>
+      <string>AWS Linux/org.iomedia.galen:AMGRTests</string>
+      <ranges>7,12-15</ranges>
+    </entry>
+    <entry>
+      <string>AWS Linux</string>
+      <ranges>7,12-15</ranges>
+    </entry>
+    <entry>
+      <string>Prod Build Sanity/org.iomedia.galen:AMGRTests</string>
+      <ranges>114-115</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-11 15:15:19.982 UTC</timestamp>
+  <md5sum>08a7191e4756f9e66d0e06ca04a88fd2</md5sum>
+  <fileName>org.iomedia.framework:IOMediaFramework-18.2.jar</fileName>
+  <usages>
+    <entry>
+      <string>AWS Linux</string>
+      <ranges>40-41</ranges>
+    </entry>
+    <entry>
+      <string>AWS Linux/org.iomedia.galen:AMGRTests</string>
+      <ranges>40-41</ranges>
+    </entry>
+    <entry>
+      <string>Provisioning Portal</string>
+      <ranges>22</ranges>
+    </entry>
+    <entry>
+      <string>Provisioning Portal/org.iomedia.galen:PP</string>
+      <ranges>22</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

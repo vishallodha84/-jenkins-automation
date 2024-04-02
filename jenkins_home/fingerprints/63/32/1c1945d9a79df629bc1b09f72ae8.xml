@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2017-11-28 21:20:23.754 UTC</timestamp>
+  <original>
+    <name>Sauce Labs/org.iomedia.galen:AMGRTests</name>
+    <number>57</number>
+  </original>
+  <md5sum>63321c1945d9a79df629bc1b09f72ae8</md5sum>
+  <fileName>org.iomedia.galen:AMGRTests:pom.xml</fileName>
+  <usages>
+    <entry>
+      <string>Prod Build Sanity</string>
+      <ranges>10</ranges>
+    </entry>
+    <entry>
+      <string>Prod Build Sanity/org.iomedia.galen:AMGRTests</string>
+      <ranges>10</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

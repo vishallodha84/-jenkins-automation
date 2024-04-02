@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.plugins.sauce__ondemand.PluginImpl plugin="sauce-ondemand@1.164">
+  <reuseSauceAuth>false</reuseSauceAuth>
+  <sauceConnectDirectory></sauceConnectDirectory>
+  <sauceConnectOptions></sauceConnectOptions>
+  <sauceConnectMaxRetries></sauceConnectMaxRetries>
+  <sauceConnectRetryWaitTime></sauceConnectRetryWaitTime>
+  <environmentVariablePrefix></environmentVariablePrefix>
+  <sendUsageData>false</sendUsageData>
+</hudson.plugins.sauce__ondemand.PluginImpl>

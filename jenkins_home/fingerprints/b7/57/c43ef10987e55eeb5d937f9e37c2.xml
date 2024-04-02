@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2017-05-03 07:18:11.975 UTC</timestamp>
+  <md5sum>b757c43ef10987e55eeb5d937f9e37c2</md5sum>
+  <fileName>Credential id=cd2c20dc-0861-425d-99d8-92e820f32cd5 name=ec2-user</fileName>
+  <usages>
+    <entry>
+      <string>Prod Build Sanity</string>
+      <ranges>1-32,34-71,73-91,93-104</ranges>
+    </entry>
+    <entry>
+      <string>AWS Linux</string>
+      <ranges>1-3</ranges>
+    </entry>
+    <entry>
+      <string>TakeScreenshot</string>
+      <ranges>1-41</ranges>
+    </entry>
+  </usages>
+  <facets>
+    <com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet plugin="credentials@2.1.13">
+      <timestamp>1494351501264</timestamp>
+      <itemFullName>Galen</itemFullName>
+      <timestamp0>1494348852027</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet>
+    <com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet plugin="credentials@2.1.13">
+      <timestamp>1510048725746</timestamp>
+      <itemFullName>AWS Linux 2</itemFullName>
+      <timestamp0>1507727749186</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet>
+    <com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet plugin="credentials@2.1.13">
+      <timestamp>1519733579660</timestamp>
+      <itemFullName>AWS Linux</itemFullName>
+      <timestamp0>1519733475883</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet>
+    <com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet plugin="credentials@2.1.13">
+      <timestamp>1519734306648</timestamp>
+      <itemFullName>Generate user accounts</itemFullName>
+      <timestamp0>1519734277383</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet>
+    <com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet plugin="credentials@2.1.13">
+      <timestamp>1519734347957</timestamp>
+      <itemFullName>Prod Build Sanity</itemFullName>
+      <timestamp0>1519734337875</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet>
+    <com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet plugin="credentials@2.1.13">
+      <timestamp>1519734390254</timestamp>
+      <itemFullName>Sauce Labs</itemFullName>
+      <timestamp0>1519734371718</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet>
+    <com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet plugin="credentials@2.1.13">
+      <timestamp>1519734420561</timestamp>
+      <itemFullName>TakeScreenshot</itemFullName>
+      <timestamp0>1519734411039</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet>
+  </facets>
+</fingerprint>

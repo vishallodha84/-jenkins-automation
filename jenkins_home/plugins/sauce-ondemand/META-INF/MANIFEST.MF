@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: halkeye
+Build-Jdk: 1.8.0_31
+Extension-Name: sauce-ondemand
+Specification-Title: The Jenkins Plugins Parent POM Project
+Implementation-Title: sauce-ondemand
+Implementation-Version: 1.164
+Plugin-Class: hudson.plugins.sauce_ondemand.PluginImpl
+Group-Id: org.jenkins-ci.plugins
+Short-Name: sauce-ondemand
+Long-Name: Jenkins Sauce OnDemand plugin
+Url: http://wiki.jenkins-ci.org/display/JENKINS/Sauce+OnDemand+Plugin
+Plugin-Version: 1.164
+Hudson-Version: 1.609.2
+Jenkins-Version: 1.609.2
+Plugin-Dependencies: maven-plugin:2.11,matrix-project:1.4,workflow-bas
+ ic-steps:1.15,run-condition:1.0,workflow-cps:1.15,junit:1.9,workflow-
+ step-api:1.15,workflow-job:1.15,credentials:2.1.1
+Plugin-Developers: Gavin Mogan:halkeye:gavin@saucelabs.com
+

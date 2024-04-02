@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-03-29 14:33:24.74 UTC</timestamp>
+  <original>
+    <name>AWS Linux/org.iomedia.galen:AMGRTests</name>
+    <number>33</number>
+  </original>
+  <md5sum>7e58bfdd1e45ff9d83e5d594cef55a9c</md5sum>
+  <fileName>org.iomedia.galen:AMGRTests:pom.xml</fileName>
+  <usages>
+    <entry>
+      <string>AWS Linux/org.iomedia.galen:AMGRTests</string>
+      <ranges>33-35</ranges>
+    </entry>
+    <entry>
+      <string>AWS Linux</string>
+      <ranges>33-35</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-03-05 09:14:50.913 UTC</timestamp>
+  <md5sum>8dc2bbc17503265c3e5a76fb58c34c26</md5sum>
+  <fileName>org.iomedia.framework:IOMediaFramework-14.8.jar</fileName>
+  <usages>
+    <entry>
+      <string>Provisioning Portal/org.iomedia.galen:AMGRTests</string>
+      <ranges>4-6,8-12</ranges>
+    </entry>
+    <entry>
+      <string>Provisioning Portal</string>
+      <ranges>4-6,8-21</ranges>
+    </entry>
+    <entry>
+      <string>Provisioning Portal/org.iomedia.galen:PP</string>
+      <ranges>13-21</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

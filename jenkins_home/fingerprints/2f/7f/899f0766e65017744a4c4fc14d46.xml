@@ -1,0 +1,45 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2017-05-03 08:13:48.569 UTC</timestamp>
+  <md5sum>2f7f899f0766e65017744a4c4fc14d46</md5sum>
+  <fileName>org.json:json-20160810.jar</fileName>
+  <usages>
+    <entry>
+      <string>AWS Linux</string>
+      <ranges>6-7,12-17,19,21,23-26,30,32-37,39-43,50,52-55</ranges>
+    </entry>
+    <entry>
+      <string>Prod Build Sanity/org.iomedia.galen:AMGRTests</string>
+      <ranges>3-4,7,9-11,13-18,23-24,29-32,36-57,59-81,83-93,95-97,99-101,103-104,106,108,110,114-115,121-122,124-126,142-145</ranges>
+    </entry>
+    <entry>
+      <string>TakeScreenshot</string>
+      <ranges>1-41,43</ranges>
+    </entry>
+    <entry>
+      <string>AWS Linux/org.iomedia.galen:AMGRTests</string>
+      <ranges>6-7,12-17,19,21,23-26,30,32-37,39-43,50,52-55</ranges>
+    </entry>
+    <entry>
+      <string>Provisioning Portal/org.iomedia.galen:AMGRTests</string>
+      <ranges>4-6,8-12</ranges>
+    </entry>
+    <entry>
+      <string>Provisioning Portal/org.iomedia.galen:PP</string>
+      <ranges>13-25</ranges>
+    </entry>
+    <entry>
+      <string>TakeScreenshot/org.iomedia.galen:AMGRTests</string>
+      <ranges>1-41,43</ranges>
+    </entry>
+    <entry>
+      <string>Provisioning Portal</string>
+      <ranges>4-6,8-25</ranges>
+    </entry>
+    <entry>
+      <string>Prod Build Sanity</string>
+      <ranges>3-4,7,9-11,13-18,23-24,29-32,36-57,59-71,73-81,83-87,89-91,93,95-97,99-101,103-104,106,108,110,114-115,121-122,124-126,142-145</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

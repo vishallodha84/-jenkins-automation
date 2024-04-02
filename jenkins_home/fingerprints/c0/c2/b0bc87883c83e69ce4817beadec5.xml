@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2017-12-13 15:48:13.763 UTC</timestamp>
+  <md5sum>c0c2b0bc87883c83e69ce4817beadec5</md5sum>
+  <fileName>org.iomedia.framework:IOMediaFramework-13.8.jar</fileName>
+  <usages>
+    <entry>
+      <string>TakeScreenshot/org.iomedia.galen:AMGRTests</string>
+      <ranges>1-6</ranges>
+    </entry>
+    <entry>
+      <string>Prod Build Sanity</string>
+      <ranges>95-97,99-101</ranges>
+    </entry>
+    <entry>
+      <string>TakeScreenshot</string>
+      <ranges>1-6</ranges>
+    </entry>
+    <entry>
+      <string>Prod Build Sanity/org.iomedia.galen:AMGRTests</string>
+      <ranges>95-97,99-101</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

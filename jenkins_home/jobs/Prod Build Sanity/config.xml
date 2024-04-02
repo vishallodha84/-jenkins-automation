@@ -1,0 +1,473 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<maven2-moduleset plugin="maven-plugin@2.15.1">
+  <actions/>
+  <description>Execute automation tests - UI + Functional</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.27.0">
+      <projectUrl>https://iomedia.beanstalkapp.com/stp-qa-automation/browse/git?ref=b-galen/</projectUrl>
+      <displayName></displayName>
+    </com.coravy.hudson.plugins.github.GithubProjectProperty>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>Env</name>
+          <description>Select Environment</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>GENERIC</string>
+              <string>UNITAS</string>
+              <string>GENESIS</string>
+              <string>IOMEDIA2</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>Calendar</name>
+          <description>Excel file to execute</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>USER_JOURNEYS</string>
+              <string>PROD_SANITY</string>
+              <string>AMGR_BUILD_SANITY</string>
+              <string>FUNCTIONAL</string>
+              <string>SSO</string>
+              <string>USER_LOGIN</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>groups</name>
+          <description>Use comma separated values for using more than one group. Below are the groups to be used for running configurations.
+Blank value will take the default selection as passed in excel sheet.
+***********************************************************************************************
+
+smoke, regression, cmsFunctional, miscFunctional, miscUi, dashboardUi, dashboardFunctional, ticketsUi, ticketsFunctional, invoicesFunctional, viewFunctional, sendFunctional, donateFunctional, sellFunctional, invoicesUi, prod, manageTicketsApi</description>
+          <defaultValue>!invoicesUi,!invoicesFunctional,!sendFunctional</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>ReplaceCalendarFile</name>
+          <description>Replace the existing calendar file with the new one</description>
+          <defaultValue>true</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>ClearX</name>
+          <description></description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>A</string>
+              <string>F</string>
+              <string>N</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>suiteTo</name>
+          <description>Mention email address (separated by semi-colon(;)) for reporting purpose</description>
+          <defaultValue></defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>classTo</name>
+          <description>Mention email address (separated by semi-colon(;)) for reporting purpose</description>
+          <defaultValue></defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>TakeScreenshot</name>
+          <description></description>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>Branch</name>
+          <description>Git Branch</description>
+          <defaultValue>galen</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>Screensizepadding</name>
+          <description></description>
+          <defaultValue></defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>profile</name>
+          <description></description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>default</string>
+              <string>custom</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>runLocally</name>
+          <description>Run locally or on saucelabs</description>
+          <defaultValue>true</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>seleniumURI</name>
+          <description>Sauce lab URI</description>
+          <defaultValue>localhost:4446</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.TextParameterDefinition>
+          <name>DeviceConf</name>
+          <description>Device Configuration</description>
+          <defaultValue></defaultValue>
+          <trim>false</trim>
+        </hudson.model.TextParameterDefinition>
+        <hudson.model.TextParameterDefinition>
+          <name>EnvConfig</name>
+          <description>Environment Configuration</description>
+          <defaultValue></defaultValue>
+          <trim>false</trim>
+        </hudson.model.TextParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>JenkinsIp</name>
+          <description>Jenkins Address</description>
+          <defaultValue>prd214-nam-prodpci-us-east-1.pci-tmaws.io:8080</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>accountStatus</name>
+          <description></description>
+          <defaultValue>PLAN</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>CreateAccount</name>
+          <description></description>
+          <defaultValue>addEventsOnlyForNewAccounts</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>useATSGenericUrl</name>
+          <description></description>
+          <defaultValue>true</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>deviceList</name>
+          <description></description>
+          <defaultValue>laptop,desktop,mobile</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>adminUserName</name>
+          <description>CMS super admin username</description>
+          <defaultValue></defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>adminPassword</name>
+          <description>CMS super admin password</description>
+          <defaultValue></defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>setSession</name>
+          <description>Set session limit to unlimited in CMS</description>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>sessions</name>
+          <description>Number of sessions</description>
+          <defaultValue></defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>attachLogFile</name>
+          <description></description>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>parallel</name>
+          <description>tests
+classes</description>
+          <defaultValue></defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>relatedEnv</name>
+          <description>Related env for new spin up site</description>
+          <defaultValue></defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>ExecutePostBuildAction</name>
+          <description></description>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>generateNewTestNgFile</name>
+          <description></description>
+          <defaultValue>true</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>pixelMatch</name>
+          <description></description>
+          <defaultValue>80</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>seats_paid</name>
+          <description></description>
+          <defaultValue>1</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>seats_unpaid</name>
+          <description></description>
+          <defaultValue>0</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>handling_unpaid</name>
+          <description></description>
+          <defaultValue>2</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>splunkLogIntegration</name>
+          <description></description>
+          <defaultValue>true</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>videoGifIntegration</name>
+          <description></description>
+          <defaultValue>true</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>consoleLogsIntegration</name>
+          <description></description>
+          <defaultValue>true</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>generateGifOnlyOnFailure</name>
+          <description></description>
+          <defaultValue>true</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>kibanaLogIntegration</name>
+          <description></description>
+          <defaultValue>true</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>chromeArgument</name>
+          <description></description>
+          <defaultValue>headless</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>chromedriverPath</name>
+          <description></description>
+          <defaultValue>/chromedriver</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>gatlingHost</name>
+          <description></description>
+          <defaultValue>http://gatling-reports.tmaws.io/</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.3.0">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://git.tmaws.io/nam/nam-automation.git</url>
+        <credentialsId>90a14f43-cff4-4f3c-be51-5d322a6047a7</credentialsId>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/${Branch}</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <authToken>prod</authToken>
+  <triggers/>
+  <concurrentBuild>true</concurrentBuild>
+  <customWorkspace>./workspace/Prod Build Sanity</customWorkspace>
+  <rootModule>
+    <groupId>org.iomedia.galen</groupId>
+    <artifactId>AMGRTests</artifactId>
+  </rootModule>
+  <goals>-X test -Psurefire -Dtestng-suite-xml=&quot;${CLIENT_NAME}-testng-customsuite.xml&quot; -Dcalendar=&quot;${file_name}&quot; -Denv=&quot;${Env}&quot; -DsuiteTo=&quot;${suiteTo}&quot; -DclassTo=&quot;${classTo}&quot; -DtakeScreenshot=${TakeScreenshot} -DclearX=&quot;${ClearX}&quot; -Dscreensizepadding=&quot;${Screensizepadding}&quot; -DreplaceCalendarFile=&quot;${ReplaceCalendarFile}&quot; -Dprofiles=&quot;${profile}&quot; -Dbranch=&quot;${Branch}&quot; -DrunLocally=&quot;${runLocally}&quot; -DseleniumURI=&quot;${seleniumURI}&quot; -DdeviceConf=&quot;${DeviceConf}&quot; -DenvConfig=&quot;${EnvConfig}&quot; -DjenkinsIp=&quot;${_JenkinsIp}&quot; -DaccountStatus=&quot;${accountStatus}&quot; -DdeviceList=&quot;${deviceList}&quot; -DattachLogFile=&quot;${attach_log_file}&quot; -DrelatedEnv=&quot;${related_env}&quot; -DpixelMatch=&quot;${pixelMatch}&quot; -DsplunkLogIntegration=&quot;${splunkLogIntegration}&quot; -DvideoGifIntegration=&quot;${_videoGifIntegration}&quot; -DconsoleLogsIntegration=&quot;${_consoleLogsIntegration}&quot; -DgenerateGifOnlyOnFailure=&quot;${generateGifOnlyOnFailure}&quot; -DkibanaLogIntegration=&quot;${kibanaLogIntegration}&quot; -DchromeArgument=&quot;${chromeArgument}&quot; -DchromedriverPath=&quot;${chromedriverPath}&quot; -DgatlingHost=&quot;${gatlingHost}&quot;</goals>
+  <aggregatorStyleBuild>true</aggregatorStyleBuild>
+  <incrementalBuild>false</incrementalBuild>
+  <ignoreUpstremChanges>false</ignoreUpstremChanges>
+  <ignoreUnsuccessfulUpstreams>false</ignoreUnsuccessfulUpstreams>
+  <archivingDisabled>false</archivingDisabled>
+  <siteArchivingDisabled>false</siteArchivingDisabled>
+  <fingerprintingDisabled>false</fingerprintingDisabled>
+  <resolveDependencies>false</resolveDependencies>
+  <processPlugins>false</processPlugins>
+  <mavenValidationLevel>-1</mavenValidationLevel>
+  <runHeadless>false</runHeadless>
+  <disableTriggerDownstreamProjects>false</disableTriggerDownstreamProjects>
+  <blockTriggerWhenBuilding>true</blockTriggerWhenBuilding>
+  <settings class="org.jenkinsci.plugins.configfiles.maven.job.MvnSettingsProvider" plugin="config-file-provider@2.15.7">
+    <settingsConfigId>787ee85a-0488-434f-9169-e555a2774bcd</settingsConfigId>
+  </settings>
+  <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
+  <reporters>
+    <hudson.maven.reporters.MavenMailer>
+      <recipients>nam-automation@livenation.com,preeti.kumari@ticketmaster.com</recipients>
+      <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
+      <sendToIndividuals>false</sendToIndividuals>
+      <perModuleEmail>false</perModuleEmail>
+    </hudson.maven.reporters.MavenMailer>
+  </reporters>
+  <publishers>
+    <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.57.2">
+      <recipientList>nam-automation@livenation.com,preeti.kumari@ticketmaster.com</recipientList>
+      <configuredTriggers>
+        <hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
+          <email>
+            <subject>$PROJECT_DEFAULT_SUBJECT</subject>
+            <body>$PROJECT_DEFAULT_CONTENT</body>
+            <recipientProviders>
+              <hudson.plugins.emailext.plugins.recipients.ListRecipientProvider/>
+            </recipientProviders>
+            <attachmentsPattern></attachmentsPattern>
+            <attachBuildLog>false</attachBuildLog>
+            <compressBuildLog>false</compressBuildLog>
+            <replyTo>$PROJECT_DEFAULT_REPLYTO</replyTo>
+            <contentType>project</contentType>
+          </email>
+        </hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
+      </configuredTriggers>
+      <contentType>default</contentType>
+      <defaultSubject>Jenkins Automation Report - After build new/upgrade site</defaultSubject>
+      <defaultContent>Galen report</defaultContent>
+      <attachmentsPattern></attachmentsPattern>
+      <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
+      <postsendScript>$DEFAULT_POSTSEND_SCRIPT</postsendScript>
+      <attachBuildLog>true</attachBuildLog>
+      <compressBuildLog>true</compressBuildLog>
+      <replyTo>nam-automation@livenation.com,preeti.kumari@ticketmaster.com</replyTo>
+      <saveOutput>false</saveOutput>
+      <disabled>false</disabled>
+    </hudson.plugins.emailext.ExtendedEmailPublisher>
+  </publishers>
+  <buildWrappers>
+    <com.lookout.jenkins.EnvironmentScript plugin="environment-script@1.2.5">
+      <script>#!/bin/bash
+if [[ &quot;$EnvConfig&quot; = *[!\ ]* ]]; then
+   A=$(echo $EnvConfig | awk -F&quot;&lt;/APP_URL&gt;&quot; &apos;{print $1}&apos;)
+   B=$(echo $A | awk -F&quot;://&quot; &apos;{print $2}&apos;)
+   if [[ &quot;$A&quot; =~ &apos;/&apos;$ ]]; then
+      strlength=$(echo -n $A | wc -m)
+      A=${A:0:$strlength - 1}
+   fi
+   client_id=${A##*/}
+   echo client_name=$client_id | tr [a-z] [A-Z]
+   if [[ &quot;$EnvConfig&quot; == *&quot;am-support.io-media.com&quot;* ]]; then
+      echo file_name=PROD_SANITY
+      echo related_env=$relatedEnv
+      echo attach_log_file=true
+      echo execute_post_build_action=false
+      echo create_account=&quot;addEventsOnlyForNewAccounts&quot;
+      echo _setSession=$setSession
+      echo _sessions=&quot;1&quot;
+      echo _parallel=&quot;tests&quot;
+      echo _groups=$groups
+      echo _JenkinsIp=&quot;prd214-nam-jenkins-qa-us-east-1.nonprod-tmaws.io:8080&quot;
+      echo _videoGifIntegration=$videoGifIntegration
+      echo _consoleLogsIntegration=$consoleLogsIntegration
+  else
+   if [[ &quot;$EnvConfig&quot; == *&quot;staging-oss.ticketmaster.com&quot;* ]] || [[ &quot;$EnvConfig&quot; == *&quot;stg1.acctmgr.us-east-1.ppub-tmaws.io&quot;* ]]; then
+      echo file_name=USER_JOURNEYS
+      echo related_env=GENESIS
+      echo attach_log_file=false
+      echo execute_post_build_action=false
+      echo create_account=&quot;createonly&quot;
+      echo _setSession=true
+      echo _sessions=&quot;&quot;
+      echo _parallel=&quot;&quot;
+      echo _groups=$groups&apos;,!sso&apos;
+      echo _JenkinsIp=&quot;prd214-nam-preprodpci-us-east-1.pci-tmaws.io:8080&quot;
+      echo _videoGifIntegration=$videoGifIntegration
+      echo _consoleLogsIntegration=$consoleLogsIntegration
+   elif [[ &quot;$EnvConfig&quot; == *&quot;qa1.acctmgr.us-east-1.nonprod-tmaws.io&quot;* ]]; then
+      echo file_name=USER_JOURNEYS
+      echo related_env=UNITAS
+      echo attach_log_file=false
+      echo execute_post_build_action=false
+      echo create_account=&quot;createonly&quot;
+      echo _setSession=true
+      echo _sessions=&quot;&quot;
+      echo _parallel=&quot;&quot;
+      echo _groups=$groups
+      echo _JenkinsIp=&quot;prd214-nam-jenkins-qa-us-east-1.nonprod-tmaws.io:8080&quot;
+      echo _videoGifIntegration=$videoGifIntegration
+      echo _consoleLogsIntegration=$consoleLogsIntegration
+   else
+      echo file_name=PROD_SANITY
+      echo related_env=$relatedEnv
+      echo attach_log_file=true
+      echo execute_post_build_action=false
+      echo create_account=&quot;addEventsOnlyForNewAccounts&quot;
+      echo _setSession=$setSession
+      echo _sessions=&quot;1&quot;
+      echo _parallel=&quot;tests&quot;
+      echo _groups=$groups
+      echo _JenkinsIp=&quot;prd214-nam-prodpci-us-east-1.pci-tmaws.io:8080&quot;
+      echo _videoGifIntegration=false
+      echo _consoleLogsIntegration=false
+   fi
+fi
+else
+   echo client_name=$Env | tr [a-z] [A-Z]
+   echo file_name=$Calendar
+   echo related_env=$relatedEnv
+   echo attach_log_file=$attachLogFile
+   echo execute_post_build_action=$ExecutePostBuildAction
+   echo create_account=$CreateAccount
+   echo _setSession=$setSession
+   echo _sessions=$sessions
+   echo _parallel=$parallel
+   echo _groups=$groups
+   echo _JenkinsIp=$JenkinsIp
+   echo _videoGifIntegration=$videoGifIntegration
+   echo _consoleLogsIntegration=$consoleLogsIntegration
+fi</script>
+      <scriptType>unixScript</scriptType>
+      <runOnlyOnParent>false</runOnlyOnParent>
+      <hideEnvironmentVariablesValues>false</hideEnvironmentVariablesValues>
+    </com.lookout.jenkins.EnvironmentScript>
+    <org.jenkinsci.plugins.builduser.BuildUser plugin="build-user-vars-plugin@1.5"/>
+  </buildWrappers>
+  <prebuilders>
+    <hudson.tasks.Shell>
+      <command>mvn generate-test-resources -Ptest -Dcalendar=&quot;$file_name&quot; -DwriteToFile=true -DclearX=&quot;$ClearX&quot; -DreplaceCalendarFile=&quot;$ReplaceCalendarFile&quot; -DdeviceConf=&quot;$DeviceConf&quot; -DrunLocally=&quot;$runLocally&quot; -Dgroups=&quot;$_groups&quot; -DcreateAccount=&quot;$create_account&quot; -Denv=&quot;$Env&quot; -DenvConfig=&quot;$EnvConfig&quot; -DuseATSGenericUrl=&quot;$useATSGenericUrl&quot; -DadminUserName=&quot;$admin_user_name&quot; -DadminPassword=&quot;$admin_password&quot; -Dsessions=&quot;$sessions&quot; -DsetSession=&quot;$_setSession&quot; -DseleniumURI=&quot;$seleniumURI&quot; -Dparallel=&quot;$parallel&quot; -DrelatedEnv=&quot;$related_env&quot; -DgenerateNewTestNgFile=&quot;$generateNewTestNgFile&quot; -Dseats.paid=&quot;$seats_paid&quot; -Dseats.unpaid=&quot;$seats_unpaid&quot; -Dhandling.unpaid=&quot;$handling_unpaid&quot; -DchromeArgument=&quot;$chromeArgument&quot; -DchromedriverPath=&quot;$chromedriverPath&quot;</command>
+    </hudson.tasks.Shell>
+  </prebuilders>
+  <postbuilders>
+    <hudson.tasks.Shell>
+      <command>#!/bin/bash
+chmod +x ./uploadClientReport.sh
+./uploadClientReport.sh Reports/ $CLIENT_NAME
+if [[ &quot;$execute_post_build_action&quot; = true ]]; then
+   mvn generate-test-resources -PpostBuildAction -DrunLocally=&quot;$runLocally&quot; -Denv=&quot;$Env&quot; -DenvConfig=&quot;$EnvConfig&quot; -DadminUserName=&quot;$admin_user_name&quot; -DadminPassword=&quot;$admin_password&quot; -DsetSession=&quot;$_setSession&quot; -DseleniumURI=&quot;$seleniumURI&quot; -DrelatedEnv=&quot;$related_env&quot; -Dcalendar=&quot;$file_name&quot; -DchromeArgument=&quot;$chromeArgument&quot; -DchromedriverPath=&quot;$chromedriverPath&quot;
+fi</command>
+    </hudson.tasks.Shell>
+  </postbuilders>
+  <runPostStepsIfResult>
+    <name>FAILURE</name>
+    <ordinal>2</ordinal>
+    <color>RED</color>
+    <completeBuild>true</completeBuild>
+  </runPostStepsIfResult>
+</maven2-moduleset>

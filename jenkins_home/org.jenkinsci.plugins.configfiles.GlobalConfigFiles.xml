@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.configfiles.GlobalConfigFiles plugin="config-file-provider@2.15.7">
+  <configs class="sorted-set">
+    <comparator class="org.jenkinsci.plugins.configfiles.GlobalConfigFiles$1"/>
+    <org.jenkinsci.plugins.configfiles.maven.MavenSettingsConfig>
+      <id>787ee85a-0488-434f-9169-e555a2774bcd</id>
+      <name>MySettings</name>
+      <comment>user settings</comment>
+      <content>&lt;settings&gt; 
+  &lt;profiles&gt;
+   &lt;profile&gt;
+     &lt;id&gt;send-mail&lt;/id&gt;
+     &lt;activation&gt;
+       &lt;activeByDefault&gt;true&lt;/activeByDefault&gt;
+     &lt;/activation&gt;
+     &lt;properties&gt;
+       &lt;mail.username&gt;AKIAJJZQJWCYPTXY3BSQ&lt;/mail.username&gt;
+       &lt;mail.password&gt;AtQu2DsC1/q6xGP5C2+EJZLw5ahc1Av+o9qJd/5LG6+A&lt;/mail.password&gt;
+     &lt;/properties&gt;
+   &lt;/profile&gt;
+  &lt;/profiles&gt;
+  &lt;servers&gt;
+    &lt;server&gt;
+     &lt;id&gt;github&lt;/id&gt;
+     &lt;username&gt;prateekladha&lt;/username&gt;
+     &lt;password&gt;Raunak@123&lt;/password&gt;
+    &lt;/server&gt;
+  &lt;/servers&gt;
+&lt;/settings&gt;</content>
+      <providerId>org.jenkinsci.plugins.configfiles.maven.MavenSettingsConfig</providerId>
+      <serverCredentialMappings/>
+      <isReplaceAll>true</isReplaceAll>
+    </org.jenkinsci.plugins.configfiles.maven.MavenSettingsConfig>
+  </configs>
+</org.jenkinsci.plugins.configfiles.GlobalConfigFiles>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-23 17:46:59.24 UTC</timestamp>
+  <md5sum>411c98ff96ee9e526f1b85fb62c3d343</md5sum>
+  <fileName>org.iomedia.framework:IOMediaFramework-18.4.jar</fileName>
+  <usages>
+    <entry>
+      <string>Provisioning Portal</string>
+      <ranges>23-25</ranges>
+    </entry>
+    <entry>
+      <string>Provisioning Portal/org.iomedia.galen:PP</string>
+      <ranges>23-25</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

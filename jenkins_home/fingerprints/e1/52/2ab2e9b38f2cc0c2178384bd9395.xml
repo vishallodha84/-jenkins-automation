@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-03-05 12:42:35.374 UTC</timestamp>
+  <md5sum>e1522ab2e9b38f2cc0c2178384bd9395</md5sum>
+  <fileName>org.iomedia.framework:IOMediaFramework-15.8.jar</fileName>
+  <usages>
+    <entry>
+      <string>Prod Build Sanity</string>
+      <ranges>114-115</ranges>
+    </entry>
+    <entry>
+      <string>AWS Linux/org.iomedia.galen:AMGRTests</string>
+      <ranges>7,12-15</ranges>
+    </entry>
+    <entry>
+      <string>AWS Linux</string>
+      <ranges>7,12-15</ranges>
+    </entry>
+    <entry>
+      <string>Prod Build Sanity/org.iomedia.galen:AMGRTests</string>
+      <ranges>114-115</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

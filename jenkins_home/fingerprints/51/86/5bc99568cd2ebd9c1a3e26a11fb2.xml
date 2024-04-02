@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-03-05 09:14:50.871 UTC</timestamp>
+  <original>
+    <name>Provisioning Portal/org.iomedia.galen:AMGRTests</name>
+    <number>4</number>
+  </original>
+  <md5sum>51865bc99568cd2ebd9c1a3e26a11fb2</md5sum>
+  <fileName>org.iomedia.galen:AMGRTests:pom.xml</fileName>
+  <usages>
+    <entry>
+      <string>Provisioning Portal/org.iomedia.galen:AMGRTests</string>
+      <ranges>4-6,8-12</ranges>
+    </entry>
+    <entry>
+      <string>Provisioning Portal</string>
+      <ranges>4-6,8-12</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

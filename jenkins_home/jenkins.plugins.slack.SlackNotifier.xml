@@ -1,0 +1,9 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.plugins.slack.SlackNotifier_-DescriptorImpl plugin="slack@2.2">
+  <baseUrl>https://ticketmaster.slack.com/services/hooks/jenkins-ci/</baseUrl>
+  <teamDomain></teamDomain>
+  <token>HrrrQB1PjfW8KtWoYBA1Mhgm</token>
+  <tokenCredentialId></tokenCredentialId>
+  <botUser>false</botUser>
+  <room>amgr-automation</room>
+</jenkins.plugins.slack.SlackNotifier_-DescriptorImpl>

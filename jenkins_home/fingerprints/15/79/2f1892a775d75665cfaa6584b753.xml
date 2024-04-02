@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2017-12-18 08:28:14.47 UTC</timestamp>
+  <original>
+    <name>TakeScreenshot/org.iomedia.galen:AMGRTests</name>
+    <number>1</number>
+  </original>
+  <md5sum>15792f1892a775d75665cfaa6584b753</md5sum>
+  <fileName>org.iomedia.galen:AMGRTests:pom.xml</fileName>
+  <usages>
+    <entry>
+      <string>TakeScreenshot/org.iomedia.galen:AMGRTests</string>
+      <ranges>1-6</ranges>
+    </entry>
+    <entry>
+      <string>TakeScreenshot</string>
+      <ranges>1-6</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

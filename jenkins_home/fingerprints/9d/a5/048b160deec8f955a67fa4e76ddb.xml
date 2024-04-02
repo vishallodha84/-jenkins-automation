@@ -1,0 +1,45 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-02-27 15:45:27.116 UTC</timestamp>
+  <md5sum>9da5048b160deec8f955a67fa4e76ddb</md5sum>
+  <fileName>com.google.zxing:core-3.3.0.jar</fileName>
+  <usages>
+    <entry>
+      <string>AWS Linux</string>
+      <ranges>6-7,12-17,19,21,23-26,30,32-37,39-43,50,52-55</ranges>
+    </entry>
+    <entry>
+      <string>Prod Build Sanity/org.iomedia.galen:AMGRTests</string>
+      <ranges>106,108,110,114-115,121-122,124-126,142-145</ranges>
+    </entry>
+    <entry>
+      <string>TakeScreenshot</string>
+      <ranges>43</ranges>
+    </entry>
+    <entry>
+      <string>AWS Linux/org.iomedia.galen:AMGRTests</string>
+      <ranges>6-7,12-17,19,21,23-26,30,32-37,39-43,50,52-55</ranges>
+    </entry>
+    <entry>
+      <string>Provisioning Portal/org.iomedia.galen:AMGRTests</string>
+      <ranges>4-6,8-12</ranges>
+    </entry>
+    <entry>
+      <string>Provisioning Portal/org.iomedia.galen:PP</string>
+      <ranges>13-25</ranges>
+    </entry>
+    <entry>
+      <string>TakeScreenshot/org.iomedia.galen:AMGRTests</string>
+      <ranges>43</ranges>
+    </entry>
+    <entry>
+      <string>Provisioning Portal</string>
+      <ranges>4-6,8-25</ranges>
+    </entry>
+    <entry>
+      <string>Prod Build Sanity</string>
+      <ranges>106,108,110,114-115,121-122,124-126,142-145</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>
